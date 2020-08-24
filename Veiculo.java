@@ -7,5 +7,4 @@ public interface Veiculo{
 
     public double getPotencia();
 
-    public TipoVeiculos getTipo();
 }
