@@ -7,4 +7,6 @@ public interface Veiculo{
 
     public double getPotencia();
 
+    public String getTipoVeiculo();
+
 }

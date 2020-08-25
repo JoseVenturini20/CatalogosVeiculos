@@ -1,4 +1,5 @@
 public class Caminhao implements Veiculo{
+    private String tipoVeiculo = "caminhao";
     private String placa;
     private String ano;
     private String marca;
@@ -32,6 +33,10 @@ public class Caminhao implements Veiculo{
     @Override
 	public double getPotencia() {
 		return this.potencia;
+    }
+    @Override
+    public String getTipoVeiculo(){
+        return this.tipoVeiculo;
     }
 
     public TiposCaminhao getTipo(){

@@ -45,9 +45,7 @@ public class Catalogo {
                 tipo = sc.next();
                 tipo.replaceAll(" ","");
                 double potenciaDouble = Double.parseDouble(potencia);
-                
-                System.out.println(tipo);
-              //  System.out.println(tipo=="TRESPORQUATRO");
+          
                 switch (tipo) {
                     case "TRESPORQUATRO":
                         addCaminhao(placa,ano,marca,potenciaDouble,TiposCaminhao.TRESPORQUATRO);
@@ -85,7 +83,28 @@ public class Catalogo {
         }
     }
 
-    public void imprime(){
+    public void imprimeCarro(){
+        for(Veiculo v:veiculos){
+            if(v.getTipoVeiculo() == "carro"){
+                System.out.println(v);
+            }
+        }
+    }
+    public void imprimeMoto(){
+        for(Veiculo v:veiculos){
+            if(v.getTipoVeiculo() == "moto"){
+                System.out.println(v);
+            }
+        }
+    }
+    public void imprimeCaminhao(){
+        for(Veiculo v:veiculos){
+            if(v.getTipoVeiculo() == "caminhao"){
+                System.out.println(v);
+            }
+        }
+    }
+    public void imprimeTudo(){
         for(Veiculo v:veiculos){
             System.out.println(v);
         }

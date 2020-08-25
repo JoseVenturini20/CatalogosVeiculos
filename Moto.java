@@ -1,4 +1,5 @@
 public class Moto implements Veiculo{
+    private String tipoVeiculo = "moto";
     private String placa;
     private String ano;
     private Double potencia;
@@ -21,6 +22,11 @@ public class Moto implements Veiculo{
     @Override
     public String getAno() {
         return this.ano;
+    }
+
+    @Override
+    public String getTipoVeiculo(){
+        return this.tipoVeiculo;
     }
 
     @Override
