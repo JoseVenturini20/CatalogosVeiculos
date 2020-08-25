@@ -1,5 +1,3 @@
 public enum TiposCaminhao {
-    TRESPORQUATRO, 
-    SEMIPESADO, 
-    PESADO 
+    TRESPORQUATRO,SEMIPESADO,PESADO 
 }
